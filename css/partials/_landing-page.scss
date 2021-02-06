@@ -22,20 +22,6 @@
     left: 23%;
     }
 }
-
-.planetBlue {
-    position: absolute;
-    top: 78%; 
-    width: 18%;   
-    animation: aparecer 20s ease-in  forwards;
-    @include responsive(s) {
-        top: 90%;
-        width: 35%;
-    }
-}
-
-
-
 .Eject-E1 {
     animation: name-animation 10s ease 0s forwards;
 }
@@ -62,7 +48,16 @@
         drop-shadow(0px 0px 0px rgba(0, 0, 0, 0));
         animation: name-shadow 12s ease 0s forwards;
     }
-    
+    .planetBlue {
+        position: absolute;
+        top: 78%; 
+        width: 18%;   
+        animation: aparecer 20s ease-in  forwards;
+        @include responsive(s) {
+            top: 90%;
+            width: 35%;
+        }
+    }
 }
 
 
