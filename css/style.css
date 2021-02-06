@@ -605,6 +605,15 @@ a {
   background-size: cover;
 }
 
+@media screen and (max-width: 540px) {
+  #landing-page {
+    background: url("../img/backMobile.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
 .Name-Eject {
   width: 40%;
   height: 40%;
@@ -661,8 +670,9 @@ a {
 
 @media screen and (max-width: 540px) {
   .svgEject .planetBlue {
-    top: 90%;
+    top: 73%;
     width: 35%;
+    width: 16%;
   }
 }
 
@@ -683,6 +693,7 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: 160vh;
   }
 }
 
@@ -736,9 +747,15 @@ a {
   margin-top: 3rem;
 }
 
+@media screen and (max-width: 540px) {
+  #Inscrição aside {
+    margin-top: 0.1rem;
+  }
+}
+
 #form {
   margin: 0 auto;
-  z-index: 999;
+  z-index: 100;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -861,6 +878,15 @@ a {
   position: relative;
 }
 
+@media screen and (max-width: 540px) {
+  #sobre {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 #content {
   width: 60%;
   display: -webkit-box;
@@ -893,7 +919,7 @@ a {
 }
 
 #content #content-text h1 {
-  font: 700 10rem/1 "Roboto",sans-serif;
+  font: 700 clamp(4vw, 10rem, 11rem)/1 "Roboto", sans-serif;
   color: #fafafa;
   margin-bottom: 18rem;
   z-index: 2;
@@ -913,11 +939,29 @@ a {
   color: #FCA221;
 }
 
+@media screen and (max-width: 540px) {
+  #content #content-text p {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #content #content-text {
+    padding-left: 1rem;
+  }
+}
+
 #content .svgOrbital {
   position: absolute;
   right: 35%;
   bottom: -11%;
   width: 100%;
+}
+
+@media screen and (max-width: 540px) {
+  #content {
+    width: 100%;
+  }
 }
 
 .orbital1 {
@@ -933,5 +977,163 @@ a {
 .orbital3 {
   -webkit-animation: orbital3 15s infinite linear;
           animation: orbital3 15s infinite linear;
+}
+
+#slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 40%;
+  position: relative;
+}
+
+@media screen and (max-width: 540px) {
+  #slide {
+    width: 100%;
+    position: absolute;
+    top: 138%;
+  }
+}
+
+#slide .selected {
+  border-radius: 51px;
+  background: rgba(222, 222, 222, 0.1);
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 1;
+}
+
+#slide .selected h3 {
+  color: #fafafa;
+  margin: -1% 30px 5% 30px;
+  letter-spacing: 1.2px;
+}
+
+#slide .selected p {
+  color: #fafafa;
+  margin: 0 auto;
+  font: 400 3.5rem/1.4 "Roboto",sans-serif;
+}
+
+#slide .selected .lastP {
+  margin-bottom: 10%;
+}
+
+#slide div {
+  border-radius: 51px;
+  background: rgba(222, 222, 222, 0.1);
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  -webkit-transition: opacity 800ms;
+  transition: opacity 800ms;
+}
+
+#slide div h3 {
+  color: #fafafa;
+  margin: -1% 30px 5% 30px;
+  letter-spacing: 1.2px;
+}
+
+#slide div p {
+  color: #fafafa;
+  margin: 0 auto;
+  font: 400 3.5rem/1.4 "Roboto",sans-serif;
+}
+
+#slide div .lastP {
+  margin-bottom: 10%;
+}
+
+#slide .svgCard {
+  width: 75%;
+}
+
+#slide .bolinha1 {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF9D18), to(#FFCF06));
+  background: linear-gradient(180deg, #FF9D18 0%, #FFCF06 100%);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  top: 93%;
+}
+
+@media screen and (max-width: 540px) {
+  #slide .bolinha1 {
+    display: none;
+  }
+}
+
+#slide .bolinha2 {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #D1C8C8;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  top: 93%;
+  left: 41%;
+}
+
+@media screen and (max-width: 540px) {
+  #slide .bolinha2 {
+    display: none;
+  }
+}
+
+#slide .bolinha3 {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #D1C8C8;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  top: 93%;
+  left: 55%;
+}
+
+@media screen and (max-width: 540px) {
+  #slide .bolinha3 {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

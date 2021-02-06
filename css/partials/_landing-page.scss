@@ -10,6 +10,12 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    @include responsive(s) {
+        background: url("../img/backMobile.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 
 .Name-Eject {
@@ -54,8 +60,9 @@
         width: 18%;   
         animation: aparecer 20s ease-in  forwards;
         @include responsive(s) {
-            top: 90%;
+            top: 73%;
             width: 35%;
+            width: 16%;
         }
     }
 }

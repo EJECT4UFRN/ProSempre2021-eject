@@ -22,3 +22,36 @@ const showMenu = (toggleId, navId) => {
 }
 
 showMenu('bx', 'menu-mobile');
+
+
+// SLIDE
+let time = 4000,
+    currentCardIndex = 0,
+    cards = document
+                .querySelectorAll("#slide div")
+    max = cards.length;
+
+function nextCard() {
+
+    cards[currentCardIndex]
+        .classList.remove("selected")
+
+    currentCardIndex++
+
+    if(currentCardIndex >= max) 
+        currentCardIndex = 0
+    
+
+    cards[currentCardIndex]
+        .classList.add("selected")
+    
+}
+
+function start () {
+    setInterval(() => {
+        // Troca card
+        nextCard()
+    }, time)
+}
+
+window.addEventListener("load", start);
