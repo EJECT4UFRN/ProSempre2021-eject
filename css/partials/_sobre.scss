@@ -6,6 +6,9 @@
     position: relative;
     @include responsive(s) {
         flex-direction: column;
+        justify-content: space-between;
+        border: 1px solid red; 
+        height: 170vh;
     }
 }
 #content {
@@ -21,7 +24,6 @@
         position: absolute;
         top: 18%;
         
-
         display: flex;
         flex-direction: column;
         align-items: space-between;
@@ -33,7 +35,7 @@
             z-index: 2;
             letter-spacing: 1.5px;
             @include responsive(s) {
-                
+                margin-bottom: 8rem;
             }
         }
         p {
@@ -41,6 +43,7 @@
             color: $white-normal;
             z-index: 2;
             line-height: 28px;
+            z-index: 5;
     
             margin: 2rem 1rem 3rem 0rem;
             span {
@@ -49,10 +52,13 @@
             }
             @include responsive(s) {
                 font-size: 3rem;
+                margin-top: 0 auto;
+                padding: 0 px;
             }
         }
         @include responsive(s) {
             padding-left: 1rem;
+            top: 5%;
         }
     }
     .svgOrbital {
@@ -60,9 +66,15 @@
         right: 35%;
         bottom: -11%;
         width: 100%;
+        @include responsive(s) {
+            bottom: 65%;
+        }
     }
     @include responsive(s) {
         width: 100%;
+        text-align: justify;
+        height: 60%;
+        border: 1px solid blue;
     }
 }
 
@@ -79,27 +91,24 @@
 }
 
 #slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexbox;
     flex-direction: column;
     width: 40%;
     position: relative;
+    
     @include responsive(s) {
         width: 100%;
-        
-        position: absolute;
-        top: 138%;
+        border: 1px solid #008000; 
+        height: 50%;   
     }
     .selected {
         border-radius: 51px;
         background: rgba(222, 222, 222, 0.1);
         position: absolute;
+        
 
-        display: flex;
+        @include flexbox;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         opacity: 1;
         
         h3 {
@@ -122,10 +131,8 @@
         background: rgba(222, 222, 222, 0.1);
         position: absolute;
 
-        display: flex;
+        @include flexbox;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         opacity: 0;
         transition: opacity 800ms;
        

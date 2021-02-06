@@ -1,3 +1,9 @@
+@mixin flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 // Container device
 $container-xl: 1440px;
 $container-l: 1140px;

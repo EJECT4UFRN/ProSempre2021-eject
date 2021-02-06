@@ -702,16 +702,16 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 @media screen and (max-width: 540px) {
@@ -734,12 +734,12 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #Inscrição aside .rocket {
@@ -759,12 +759,12 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #form fieldset {
@@ -884,6 +884,11 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border: 1px solid red;
+    height: 170vh;
   }
 }
 
@@ -926,11 +931,18 @@ a {
   letter-spacing: 1.5px;
 }
 
+@media screen and (max-width: 540px) {
+  #content #content-text h1 {
+    margin-bottom: 8rem;
+  }
+}
+
 #content #content-text p {
   font: 400 4rem/1 "Roboto",sans-serif;
   color: #fafafa;
   z-index: 2;
   line-height: 28px;
+  z-index: 5;
   margin: 2rem 1rem 3rem 0rem;
 }
 
@@ -942,12 +954,15 @@ a {
 @media screen and (max-width: 540px) {
   #content #content-text p {
     font-size: 3rem;
+    margin-top: 0 auto;
+    padding: 0 px;
   }
 }
 
 @media screen and (max-width: 540px) {
   #content #content-text {
     padding-left: 1rem;
+    top: 5%;
   }
 }
 
@@ -959,8 +974,17 @@ a {
 }
 
 @media screen and (max-width: 540px) {
+  #content .svgOrbital {
+    bottom: 65%;
+  }
+}
+
+@media screen and (max-width: 540px) {
   #content {
     width: 100%;
+    text-align: justify;
+    height: 60%;
+    border: 1px solid blue;
   }
 }
 
@@ -1000,8 +1024,8 @@ a {
 @media screen and (max-width: 540px) {
   #slide {
     width: 100%;
-    position: absolute;
-    top: 138%;
+    border: 1px solid #008000;
+    height: 50%;
   }
 }
 
@@ -1012,16 +1036,16 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   opacity: 1;
 }
 
@@ -1048,16 +1072,16 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   opacity: 0;
   -webkit-transition: opacity 800ms;
   transition: opacity 800ms;

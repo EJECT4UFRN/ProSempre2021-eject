@@ -14,10 +14,8 @@
 #Inscrição aside {
     width: 50%;
 
-    display: flex;
+    @include flexbox;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 
     @include responsive(s) {
         width: 100%;
@@ -32,9 +30,7 @@
             color: $secondary-normal;
             font-weight: 700;
 
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include flexbox;
         }
     }
     .rocket {
@@ -50,9 +46,7 @@
     margin: 0 auto;
     z-index: 100;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexbox;
     
     fieldset {
         font: 300 4.5rem/1 "Roboto",sans-serif;
