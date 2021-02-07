@@ -3,6 +3,7 @@
     height: 100vh;
 
     display: flex;
+    background: $primary-light;
     @include responsive(s) {
         display: flex;
         flex-direction: column;
@@ -97,9 +98,9 @@
             opacity: 0.8;
             box-shadow: -5px -2px 50px -8px rgba(255, 255, 255, 0.25), 1px 10px 15px -8px #FFB33C;
         
-
             display: inline-block;
             border-radius: 50%;
+            border: none;
 
             position: absolute;
             top: 82%;
