@@ -1,0 +1,71 @@
+#fluxo {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#textContainer {
+    border: 1px solid red;
+    h3 {
+        font: 700 clamp(4vw,10rem,11rem)/1 "Roboto",sans-serif;
+        color: $white-normal;
+
+        text-align: center;
+        margin: 10%;
+    }
+    p {
+        font-size: 5rem;
+        color: $secondary-normal;
+        text-align: center;
+        span {
+            font-weight: 700;
+        }
+    }
+}
+
+#etapasContainer {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    a {
+        border-radius: 50%;
+        background: linear-gradient(180deg, #FAFAFA 0%, rgba(250, 250, 250, 0.69) 100%);
+        text-align: center;
+        p {
+            color: $primary-normal;
+            align-items: center;
+        }
+    }
+    .etapa1 {
+        width: 25rem;
+        height: 25rem;
+        background: linear-gradient(180deg, #FF9D18 0%, #FFCF06 100%);
+    }
+    .etapa2 {
+        width: 30rem;
+        height: 30rem;
+        background: linear-gradient(180deg, #FF9D18 0%, #FFCF06 100%);
+    }
+    .etapa3 {
+        width: 35rem;
+        height: 35rem;
+        background: linear-gradient(180deg, #FF9D18 0%, #FFCF06 100%);
+    }
+    .etapa4 {
+        width: 30rem;
+        height: 30rem;
+        background: linear-gradient(180deg, #FF9D18 0%, #FFCF06 100%);
+    }
+    .etapa5 {
+        width: 25rem;
+        height: 25rem;
+        background: linear-gradient(180deg, #FF9D18 0%, #FFCF06 100%);
+    }
+    
+}
